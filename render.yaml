@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: skorozvon-bot
+    runtime: python
+    env: python
+    region: frankfurt
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    pythonVersion: "3.12.9"
